@@ -3,7 +3,7 @@
 
 # import prepped lc dataset
 # TODO - move to separate module
-lc <- read.delim('~/Coding/r/lee_carter/lc_prepped.txt')
+lc <- read.delim('lc_prepped.txt')
 
 q.const <- function(m.x.t){
   #' takes as input force of mortality for age x at time t and
