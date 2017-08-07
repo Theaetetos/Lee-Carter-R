@@ -3,7 +3,7 @@
 
 # import HMD dataset
 # this (down to line 18) should be moved to its own module
-data <- read.delim('~/Coding/r/lee_carter/usa_life_tbls.txt',
+data <- read.delim('usa_life_tbls.txt',
                    stringsAsFactors = F)
 
 # TODO - handle missing data
@@ -129,6 +129,6 @@ work <- append.b(work)
 # output prepped df
 # TODO - move to separate module? Output to db?
 write.table(work,
-            file = '~/Coding/r/lee_carter/lc_prepped.txt',
+            file = 'lc_prepped.txt',
             sep = '\t',
             row.names = F)
